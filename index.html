@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Website</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <!-- Top Bar / Navbar -->
+  <header class="topbar">
+    <div class="logo-circle">R<br/>Y<br/>N</div>
+    <nav class="nav">
+      <a href="#home" class="nav-btn">Home</a>
+      <a href="#profile" class="nav-btn">Our Profile</a>
+      <a href="#portfolio" class="nav-btn">Portfolio</a>
+      <a href="#message" class="nav-btn">Message Us</a>
+    </nav>
+  </header>
 
+  <main>
+    <!-- Home / Welcome -->
+    <section id="home" class="section welcome">
+      <div class="welcome-text">
+        <h1>Hi <span id="welcome-name">There</span>, Welcome To Website</h1>
+        <p>Ini adalah website latihan</p>
+      </div>
+
+      <!-- Banner (bisa diganti fotonya) -->
+      <div class="banner-wrap">
+        <img id="banner-image" alt="Banner"/>
+        <button id="btn-change-banner" class="btn-change">Ganti Foto</button>
+        <input id="banner-input" type="file" accept="image/*" hidden />
+      </div>
+    </section>
+
+    <hr class="divider"/>
+
+    <!-- Our Profile (pengganti Our Headquarter) -->
+    <section id="profile" class="section profile">
+      <h2>Our Profile</h2>
+
+      <div class="profile-grid">
+        <!-- Avatar + ganti foto -->
+        <div class="avatar-card">
+          <div class="avatar">
+            <img id="profile-image" alt="Foto Profil"/>
+          </div>
+          <button id="btn-change-profile" class="btn-change block">Ganti Foto Profil</button>
+          <input id="profile-input" type="file" accept="image/*" hidden />
+        </div>
+
+        <!-- Info -->
+        <div class="profile-info">
+          <h3 id="profile-name">Ryan Nanda Saputra Haryanto</h3>
+          <ul class="info-list">
+            <li><strong>Status:</strong> Mahasigma – Teknik Informatika (Semester 5)</li>
+            <li><strong>Kampus:</strong> Universitas Krisnadwipayana</li>
+            <li><strong>Fokus:</strong> Data Analyst and Frontend</li>
+          </ul>
+
+          <div class="profile-skills">
+            <h4>Keahlian</h4>
+            <div class="chips">
+              <span class="chip">HTML/CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">PHP</span>
+              <span class="chip">React</span>
+              <span class="chip">Flutter</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">Power BI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ <hr class="divider"/>
+
+    <!-- Portfolio (placeholder) -->
+    <section id="portfolio" class="section portfolio">
+      <h2>About Me</h2>
+      <p>Saya adalah Ryan Nanda Saputra Haryanto, seorang mahasiswa jurusan Teknik Informatika di Universitas Krisnadwipayana yang saat ini berada di semester 5.
+         Dengan minat besar di bidang pengembangan aplikasi web, analisis data, dan front-end,
+         saya selalu berusaha untuk mempelajari hal-hal baru yang dapat meningkatkan kemampuan teknis maupun soft skill saya.
+        Saya memiliki sedikit pemahaman dalam HTML/CSS, JavaScript, PHP, React, Flutter, MySQL, dan Power BI, yang saya gunakan untuk membangun
+        aplikasi yang tidak hanya fungsional, tetapi juga memiliki antarmuka yang ramah pengguna. Dalam perjalanan akademik dan proyek yang saya jalani,
+        saya senang mengubah ide menjadi solusi digital yang efektif, efisien, dan dapat diandalkan.Motivasi terbesar saya adalah menjadi seseorang yang dapat memberikan kontribusi nyata melalui inovasi di bidang teknologi,
+        serta menciptakan solusi yang memudahkan kehidupan banyak orang.</p>
+
+      <h3>Vision &amp; Mission</h3>
+      <ul>
+        <li><strong>Vision:</strong> Menjadi seorang profesional di bidang frontend development yang mampu menggabungkan kreativitas, logika, dan keahlian teknis untuk menciptakan antarmuka 
+            digital yang inovatif, interaktif, dan memberikan pengalaman pengguna terbaik. Saya bercita-cita untuk berkontribusi dalam membangun ekosistem digital yang inklusif, berkelanjutan, 
+            dan bermanfaat bagi generasi masa depan.</li>
+
+        <li><strong>Mission:</strong> Menciptakan solusi yang sederhana, cepat, dan bermanfaat.</li>
+      </ul>
+    </section>
+
+     <hr class="divider"/>
+
+    <!-- Message Us -->
+    <section id="message" class="section message-wrap">
+      <h2>Message Us</h2>
+
+      <div class="message-grid">
+        <!-- Form -->
+        <form id="message-form" novalidate>
+          <div class="form-row">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" placeholder="Nama" required />
+          </div>
+
+          <div class="form-row">
+            <label for="dob">Tanggal Lahir</label>
+            <input type="date" id="dob" name="dob" required />
+          </div>
+
+          <div class="form-row">
+            <label>Jenis Kelamin</label>
+            <div class="radio-group">
+              <label><input type="radio" name="gender" value="Laki-Laki" required /> Laki-Laki</label>
+              <label><input type="radio" name="gender" value="Perempuan" required /> Perempuan</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="messageText">Pesan</label>
+            <textarea id="messageText" name="messageText" rows="4" placeholder="Pesan" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+
+        <!-- Output Panel -->
+        <aside class="output">
+          <p><strong>Current time :</strong> <span id="current-time">—</span></p>
+          <p><strong>Nama :</strong> <span id="out-name">—</span></p>
+          <p><strong>Tanggal Lahir :</strong> <span id="out-dob">—</span></p>
+          <p><strong>Jenis Kelamin :</strong> <span id="out-gender">—</span></p>
+          <p><strong>Pesan :</strong> <span id="out-message">—</span></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Created By Ryan
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
