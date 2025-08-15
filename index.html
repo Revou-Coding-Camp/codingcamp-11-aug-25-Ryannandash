@@ -9,7 +9,7 @@
 <body>
   <!-- Top Bar / Navbar -->
   <header class="topbar">
-    <div class="logo-circle">R<br/>Y<br/>N</div>
+    <div class="logo-circle">R<br/>V</div>
     <nav class="nav">
       <a href="#home" class="nav-btn">Home</a>
       <a href="#profile" class="nav-btn">Our Profile</a>
@@ -22,15 +22,16 @@
     <!-- Home / Welcome -->
     <section id="home" class="section welcome">
       <div class="welcome-text">
-        <h1>Hi <span id="welcome-name">There</span>, Welcome To Website</h1>
-        <p>Ini adalah website latihan</p>
+        <h1>Hi <span id="welcome-name">There</span>, Welcome To Website Ryan</h1>
+        <p>Ini adalah website Ryan</p>
       </div>
 
       <!-- Banner (bisa diganti fotonya) -->
       <div class="banner-wrap">
-        <img id="banner-image" alt="Banner"/>
+        <img id="banner-image" alt="Banner" src="Image/uk.jpg"/>
         <button id="btn-change-banner" class="btn-change">Ganti Foto</button>
         <input id="banner-input" type="file" accept="image/*" hidden />
+        <div class="dim-text">1366×578</div>
       </div>
     </section>
 
@@ -44,7 +45,7 @@
         <!-- Avatar + ganti foto -->
         <div class="avatar-card">
           <div class="avatar">
-            <img id="profile-image" alt="Foto Profil"/>
+            <img id="profile-image" src="Image/ryann.jpg" alt="Foto Profil"/>
           </div>
           <button id="btn-change-profile" class="btn-change block">Ganti Foto Profil</button>
           <input id="profile-input" type="file" accept="image/*" hidden />
@@ -52,12 +53,21 @@
 
         <!-- Info -->
         <div class="profile-info">
-          <h3 id="profile-name">Ryan Nanda Saputra Haryanto</h3>
+          <h3 id="profile-name">Ryan Nanda Saputra</h3>
           <ul class="info-list">
-            <li><strong>Status:</strong> Mahasigma – Teknik Informatika (Semester 5)</li>
+            <li><strong>Status:</strong> Mahasiswa – Teknologi Informasi (Semester 3)</li>
             <li><strong>Kampus:</strong> Universitas Krisnadwipayana</li>
-            <li><strong>Fokus:</strong> Data Analyst and Frontend</li>
+            <li><strong>Fokus:</strong> Pengembangan Web, Keamanan Siber, Analisis Data</li>
           </ul>
+
+          <div class="profile-about">
+            <h4>Tentang Saya</h4>
+            <p>
+              Saya mahasiswa jurusan Teknologi Informasi yang antusias mempelajari
+              pengembangan aplikasi web, keamanan siber, dan analisis data. Saya
+              senang membangun solusi yang sederhana, cepat, dan bermanfaat.
+            </p>
+          </div>
 
           <div class="profile-skills">
             <h4>Keahlian</h4>
@@ -69,36 +79,24 @@
               <span class="chip">Flutter</span>
               <span class="chip">MySQL</span>
               <span class="chip">Power BI</span>
+              <span class="chip">Cybersecurity (Dasar)</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
- <hr class="divider"/>
-
     <!-- Portfolio (placeholder) -->
     <section id="portfolio" class="section portfolio">
-      <h2>About Me</h2>
-      <p>Saya adalah Ryan Nanda Saputra Haryanto, seorang mahasiswa jurusan Teknik Informatika di Universitas Krisnadwipayana yang saat ini berada di semester 5.
-         Dengan minat besar di bidang pengembangan aplikasi web, analisis data, dan front-end,
-         saya selalu berusaha untuk mempelajari hal-hal baru yang dapat meningkatkan kemampuan teknis maupun soft skill saya.
-        Saya memiliki sedikit pemahaman dalam HTML/CSS, JavaScript, PHP, React, Flutter, MySQL, dan Power BI, yang saya gunakan untuk membangun
-        aplikasi yang tidak hanya fungsional, tetapi juga memiliki antarmuka yang ramah pengguna. Dalam perjalanan akademik dan proyek yang saya jalani,
-        saya senang mengubah ide menjadi solusi digital yang efektif, efisien, dan dapat diandalkan.Motivasi terbesar saya adalah menjadi seseorang yang dapat memberikan kontribusi nyata melalui inovasi di bidang teknologi,
-        serta menciptakan solusi yang memudahkan kehidupan banyak orang.</p>
+      <h2>About the Company</h2>
+      <p>Kami fokus pada kualitas, inovasi, dan layanan terbaik.</p>
 
       <h3>Vision &amp; Mission</h3>
       <ul>
-        <li><strong>Vision:</strong> Menjadi seorang profesional di bidang frontend development yang mampu menggabungkan kreativitas, logika, dan keahlian teknis untuk menciptakan antarmuka 
-            digital yang inovatif, interaktif, dan memberikan pengalaman pengguna terbaik. Saya bercita-cita untuk berkontribusi dalam membangun ekosistem digital yang inklusif, berkelanjutan, 
-            dan bermanfaat bagi generasi masa depan.</li>
-
-        <li><strong>Mission:</strong> Menciptakan solusi yang sederhana, cepat, dan bermanfaat.</li>
+        <li>Vision: Menjadi perusahaan digital yang memberi dampak positif.</li>
+        <li>Mission: Menciptakan solusi yang sederhana, cepat, dan bermanfaat.</li>
       </ul>
     </section>
-
-     <hr class="divider"/>
 
     <!-- Message Us -->
     <section id="message" class="section message-wrap">
